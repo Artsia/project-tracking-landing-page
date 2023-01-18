@@ -1,0 +1,133 @@
+/*fonts from google*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Plus+Jakarta+Sans:wght@800&display=swap');
+
+* {
+  padding: 0%;
+  margin: 0%;
+ box-sizing: border-box;
+}
+
+body{
+  font-family: 'Barlow';
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+#background{
+  border-bottom: 1px solid rgb(243, 239, 239);
+}
+
+.image{
+  /*background-image: url("./images/illustration-devices.svg");
+  background-repeat: no-repeat;*/
+  width: 300px;
+  height: auto;
+  margin-left: 20%;
+  
+}
+
+.flexBetween{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Barlow Condensed';
+  font-weight: 800;
+}
+
+#flex-start{
+   display: flex;
+   justify-content: flex-start;
+
+}
+
+#flex-end{
+   display: flex;
+   justify-content: flex-start;
+   width: 100px;
+
+}
+.space{
+  margin:25px 0px;
+}
+
+/*New section*/
+
+#New{
+  display: flex;
+  color: hsl(231, 7%, 65%);
+}
+
+/*.highlight:hover{
+  background-color: hsl(234, 19%, 56%);
+  padding:2px;
+}*/
+
+#bluePadding{
+  background-color:  hsl(230, 29%, 20%);
+  margin-right: 5px;
+  color: white;
+  border-radius: 27%;
+  padding:0px 2px ;
+}
+
+#power{
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  color:hsl(230, 29%, 20%);
+  font-family: 'Barlow Condensed';
+  font-weight: 700;
+}
+
+#project{
+  color: hsl(230, 11%, 40%);
+}
+
+.twoItems{
+  display: flex;
+}
+
+#pinkPadding{
+  background-color: hsl(0, 100%, 68%);
+  padding: 10px;
+  color: white;
+  border-radius: 5%;
+}
+
+#preview{
+  padding: 10px;
+  color:  hsl(231, 7%, 65%);
+  margin-left: 2px;
+ 
+}
+
+/**/
+
+#topBorder{
+  border-top: 1px solid hsl(231, 7%, 65%);
+  padding-top: 20px;
+}
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    color: hsl(230, 29%, 20%);
+    padding: 16px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+  }
+
+
+
+
+/**/
