@@ -1,0 +1,142 @@
+/*fonts from google*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Plus+Jakarta+Sans:wght@800&display=swap');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*larger screens*/
+@media only screen and (min-width: 1200px) {
+
+    body {
+        font-family: 'Barlow Condensed';
+        font-size: 18px;
+        font-weight: 700;
+        overflow-x: hidden;
+        width: auto;
+    }
+
+
+    .both {
+        display: flex;
+        width: auto;
+        height: 700px;
+
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        height: 720px;
+        align-items: space-between;
+        width: auto;
+        margin-left: 100px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 200px;
+        margin-top: 10px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 600px;
+        height: 500px;
+    }
+
+    #bluePaddedText {
+        background-color: hsl(230, 29%, 20%);
+        margin-right: 5px;
+        color: white;
+        border-radius: 27%;
+        padding: 0px 5px;
+    }
+
+
+    #power {
+        color: hsl(230, 29%, 20%);
+        font-family: 'Barlow Condensed';
+        font-weight: 700;
+        font-size: 60px;
+    }
+
+    #project {
+        color: hsl(230, 11%, 40%);
+    }
+
+    .twoItems {
+        display: flex;
+    }
+
+    #pinkPadding {
+        background-color: hsl(0, 100%, 68%);
+        padding: 10px;
+        color: white;
+        border-radius: 5%;
+    }
+
+
+    #preview {
+        padding: 10px;
+        color: hsl(231, 7%, 65%);
+        margin-left: 2px;
+
+    }
+
+    /*right side*/
+
+    .right {
+        width: 5000px;
+        height: 520px;
+        background-color: hsl(207, 33%, 95%);
+        border-bottom-left-radius: 10%;
+
+    }
+
+    ul {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    li {
+        list-style: none;
+        padding: 0px 15px;
+        color: hsl(230, 29%, 20%);
+
+    }
+
+    #bigImage {
+        background-image: url('./images/illustration-devices.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+        height: 500px;
+        margin-top: 200px;
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+    /* CSS styles for screens between 600px and 900px */
+
+    .both{
+        
+    }
+  }

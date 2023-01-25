@@ -1,6 +1,7 @@
 /*fonts from google*/
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Plus+Jakarta+Sans:wght@800&display=swap');
 
+
 * {
   padding: 0%;
   margin: 0%;
@@ -12,6 +13,78 @@ body{
   font-weight: 400;
   font-size: 18px;
 }
+
+
+.container{
+
+}
+
+#background {
+
+  border: 1px solid green;
+  display: block;
+  z-index: -1;
+  position: absolute;
+  
+}
+
+.image{
+  float: right;
+  z-index: -1;
+  width: 700px;
+  height: auto;
+  margin-bottom:500px;
+  position: absolute;
+
+}
+
+
+
+.flexBetween{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+#flex-start{
+  width: 50px;
+}
+
+#flex-end{
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+  
+
+}
+
+.dropdown-content{
+  display: flex;
+  justify-content: space-around;
+  width: 920px;
+  height: 700px;
+  align-items: flex-start;
+  background-color: grey;
+  padding: 100px;
+  border-bottom-left-radius: 35%;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 375px){
 
 .center{
   display: flex;
@@ -112,25 +185,34 @@ body{
 
 /**/
 
+.hamber{
+  background-image: url('/images/icon-hamburger.svg');
+  background-repeat: none;
+  background-size: contain;
+  width: 35px;
+  height: 45px;
+  background-color: rgb(145, 57, 104);
+}
+
 #topBorder{
   border-top: 1px solid hsl(231, 7%, 65%);
   padding-top: 20px;
 }
 
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     color: hsl(230, 29%, 20%);
     padding: 16px 16px;
     z-index: 1;
-  }
+}
   
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
 
   }
-
+}
 
 
 
