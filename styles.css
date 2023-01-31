@@ -1,20 +1,6 @@
 /*fonts from google*/
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Plus+Jakarta+Sans:wght@800&display=swap');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*larger screens*/
 @media only screen and (min-width: 1200px) {
 
@@ -133,10 +119,385 @@
 
 }
 
-@media (min-width: 500px) and (max-width: 900px) {
+/**Medium screens*/
+@media (min-width: 750px) and (max-width: 1200px) {
     /* CSS styles for screens between 600px and 900px */
 
-    .both{
-        
+    body {
+        font-family: 'Barlow Condensed';
+        font-size: 15px;
+        font-weight: 700;
+        overflow-x: hidden;
+        width: auto;
     }
-  }
+
+
+    .both {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: space-between;
+        justify-content: center;
+        min-width: 600px;
+        max-width: 1200px;
+        height: auto;
+        /*background-color:hsl(207, 33%, 95%);*/
+
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        height: 60vh;
+        align-items: space-between;
+        width: auto;
+        margin: 10% 15%;
+
+
+    }
+
+    .logo {
+        width: 75px;
+        height: 150px;
+        margin-top: 7.5px;
+        display: none;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 600px;
+        height: 500px;
+    }
+
+    #bluePaddedText {
+        background-color: hsl(230, 29%, 20%);
+        margin-right: 5px;
+        color: white;
+        border-radius: 27%;
+        padding: 0px 5px;
+    }
+
+
+    #power {
+        color: hsl(230, 29%, 20%);
+        font-family: 'Barlow Condensed';
+        font-weight: 700;
+        font-size: 60px;
+    }
+
+    #project {
+        color: hsl(230, 11%, 40%);
+    }
+
+    .twoItems {
+        display: flex;
+    }
+
+    #pinkPadding {
+        background-color: hsl(0, 100%, 68%);
+        padding: 10px;
+        color: white;
+        border-radius: 5%;
+    }
+
+
+    #preview {
+        padding: 10px;
+        color: hsl(231, 7%, 65%);
+        margin-left: 2px;
+
+    }
+
+    /*right side*/
+
+    .right {
+
+        min-width: 600px;
+        max-width: 1200px;
+        width: 100%;
+        height: 80vh;
+        background-color: hsl(207, 33%, 95%);
+        /*border-bottom-left-radius: 10%;*/
+
+    }
+
+    ul {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    li {
+        list-style: none;
+        padding: 0px 15px;
+        color: hsl(230, 29%, 20%);
+
+    }
+
+
+
+    #bigImage {
+
+        background-image: url('./images/illustration-devices.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 600px;
+        height: 600px;
+        margin: 10% 15%;
+
+    }
+}
+
+
+/**small sizes**/
+
+@media only screen and (max-width:750px) {
+
+    body {
+        font-family: 'Barlow Condensed';
+        font-size: 12px;
+        overflow-x: hidden;
+    }
+
+    .both {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: space-between;
+        justify-content: center;
+        max-width: 730px;
+        height: auto;
+    }
+
+
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: auto;
+
+    }
+
+    .logo {
+        width: 75px;
+        height: 150px;
+        margin-top: 7.5px;
+        display: none;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 750px;
+        height: auto;
+    }
+
+    #bluePaddedText {
+        background-color: hsl(230, 29%, 20%);
+        margin-right: 5px;
+        color: white;
+        border-radius: 27%;
+        padding: 0px 2px;
+    }
+
+
+    #power {
+        color: hsl(230, 29%, 20%);
+        font-family: 'Barlow Condensed';
+        font-weight: 700;
+        font-size: 45px;
+    }
+
+    #project {
+        color: hsl(230, 11%, 40%);
+    }
+
+    .twoItems {
+        display: flex;
+    }
+
+    #pinkPadding {
+        background-color: hsl(0, 100%, 68%);
+        padding: 10px;
+        color: white;
+        border-radius: 5%;
+    }
+
+
+    #preview {
+        padding: 10px;
+        color: hsl(231, 7%, 65%);
+        margin-left: 2px;
+
+    }
+
+    /*right side*/
+
+    .right {
+
+        min-width: 600px;
+        max-width: 1200px;
+        width: 100%;
+        height: 70vh;
+        background-color: hsl(207, 33%, 95%);
+        /*border-bottom-left-radius: 10%;*/
+
+    }
+
+    ul {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    li {
+        list-style: none;
+        padding: 0px 15px;
+        color: hsl(230, 29%, 20%);
+
+    }
+
+
+
+    #bigImage {
+
+        background-image: url('./images/illustration-devices.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 600px;
+        height: 600px;
+        margin: 10% 15%;
+
+    }
+}
+
+/*
+@media only screen and (max-width:350px) {
+    ul{
+        display: block;
+    }
+}*/
+
+
+
+/*
+@media only screen and (max-width: 350px) {
+
+    .both {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: space-between;
+        justify-content: center;
+        max-width: 730px;
+        height: auto;
+    }
+
+
+
+    .left {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 75px;
+        height: 150px;
+        margin-top: 7.5px;
+        display: none;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 300px;
+        height: auto;
+    }
+
+    #bluePaddedText {
+        background-color: hsl(230, 29%, 20%);
+        margin-right: 5px;
+        color: white;
+        border-radius: 27%;
+        padding: 0px 2px;
+    }
+
+
+    #power {
+        color: hsl(230, 29%, 20%);
+        font-family: 'Barlow Condensed';
+        font-weight: 700;
+        font-size: 45px;
+    }
+
+    #project {
+        color: hsl(230, 11%, 40%);
+    }
+
+    .twoItems {
+        display: flex;
+    }
+
+    #pinkPadding {
+        background-color: hsl(0, 100%, 68%);
+        padding: 10px;
+        color: white;
+        border-radius: 5%;
+    }
+
+
+    #preview {
+        padding: 10px;
+        color: hsl(231, 7%, 65%);
+        margin-left: 2px;
+
+    }
+
+   
+
+    .right {
+        max-width: 350px;
+        width: 100%;
+        background-color: hsl(207, 33%, 95%);
+
+    }
+
+    ul {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+    li {
+        list-style: none;
+        padding: 0px 10px;
+        color: hsl(230, 29%, 20%);
+
+    }
+
+
+
+
+    #bigImage {
+        background-image: url('./images/illustration-devices.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 100px;
+        height: 100px;
+
+    }
+}*/
