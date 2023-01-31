@@ -395,6 +395,7 @@
 
     .nav-bar {
         display: flex;
+        height: auto;
     }
 
     ul {
